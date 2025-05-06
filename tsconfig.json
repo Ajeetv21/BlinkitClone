@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/redux/providers.ts", "src/app/lib/database.js", "src/app/redux/authslice.js", "src/app/api/auth/category/route.js", "src/models/Category.ts", "src/app/api/category/route.ts", "src/app/(admin)/category/page.jsx", "src/app/(admin)/admindashboard/category/page.jsx", "src/app/api/product/route.ts"],
+  "exclude": ["node_modules"]
+}
